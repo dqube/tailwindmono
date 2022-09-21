@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
+      "@app/svg-icon": ["libs/shared/svg-icon/src/index.ts"],
+      "@app/svg-icon/pre-loader": [
+        "libs/shared/svg-icon/pre-loader/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

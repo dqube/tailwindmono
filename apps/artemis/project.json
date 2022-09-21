@@ -1,0 +1,87 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/artemis/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/artemis",
+        "index": "apps/artemis/src/index.html",
+        "main": "apps/artemis/src/main.ts",
+        "polyfills": "apps/artemis/src/polyfills.ts",
+        "tsConfig": "apps/artemis/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/artemis/src/favicon.ico", "apps/artemis/src/assets"],
+        "styles": ["apps/artemis/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "libs/shared/environments/src/lib/environment.ts",
+              "with": "libs/shared/environments/src/lib/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "artemis:build:production"
+        },
+        "development": {
+          "browserTarget": "artemis:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "artemis:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/artemis/**/*.ts", "apps/artemis/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/artemis"],
+      "options": {
+        "jestConfig": "apps/artemis/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["Artemis"]
+}
