@@ -4,6 +4,7 @@
   "projects": {
     "artemis": "apps/artemis",
     "artemis-e2e": "apps/artemis-e2e",
+    "shared-assets": "libs/shared/assets",
     "shared-environments": "libs/shared/environments",
     "svg-icon": "libs/shared/svg-icon",
     "tailwindlabs": "apps/tailwindlabs",

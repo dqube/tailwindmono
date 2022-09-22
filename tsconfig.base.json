@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@app/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@app/svg-icon": ["libs/shared/svg-icon/src/index.ts"],
       "@app/svg-icon/pre-loader": [

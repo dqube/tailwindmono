@@ -13,7 +13,18 @@
         "polyfills": "apps/artemis/src/polyfills.ts",
         "tsConfig": "apps/artemis/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/artemis/src/favicon.ico", "apps/artemis/src/assets"],
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "libs/shared/assets/src",
+            "output": ""
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/assets/src/assets",
+            "output": "assets"
+          }
+        ],
         "styles": ["apps/artemis/src/styles.scss"],
         "scripts": []
       },

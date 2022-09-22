@@ -1,0 +1,9 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/assets/src",
+  "prefix": "devarch",
+  "targets": {
+   
+  },
+  "tags": ["scope:shared,type:assets"]
+}
