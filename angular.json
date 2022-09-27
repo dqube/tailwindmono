@@ -4,6 +4,8 @@
   "projects": {
     "artemis": "apps/artemis",
     "artemis-e2e": "apps/artemis-e2e",
+    "components-layout": "libs/components/layout",
+    "components-navigations": "libs/components/navigations",
     "shared-assets": "libs/shared/assets",
     "shared-environments": "libs/shared/environments",
     "svg-icon": "libs/shared/svg-icon",

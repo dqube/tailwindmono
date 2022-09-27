@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/shared/svg-icon/src",
-  "prefix": "devarch",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",

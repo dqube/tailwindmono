@@ -15,6 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@app/layout": ["libs/components/layout/src/index.ts"],
+      "@app/navigations": ["libs/components/navigations/src/index.ts"],
+      "@app/navigations/horizontal": [
+        "libs/navigations/horizontal/src/index.ts"
+      ],
+      "@app/navigations/vertical": [
+        "libs/components/navigations/vertical/src/index.ts"
+      ],
       "@app/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@app/shared/environments": ["libs/shared/environments/src/index.ts"],
       "@app/svg-icon": ["libs/shared/svg-icon/src/index.ts"],
