@@ -33,7 +33,13 @@
       "options": {
         "lintFilePatterns": [
           "libs/components/layout/**/*.ts",
-          "libs/components/layout/**/*.html"
+          "libs/components/layout/**/*.html",
+          "libs/components/layout/vertical/**/*.ts",
+          "libs/components/layout/vertical/**/*.html",
+          "libs/components/layout/horizontal/**/*.ts",
+          "libs/components/layout/horizontal/**/*.html",
+          "libs/components/layout/empty/**/*.ts",
+          "libs/components/layout/empty/**/*.html"
         ]
       }
     }
