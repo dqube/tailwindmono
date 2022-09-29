@@ -9,8 +9,6 @@
     "shared-assets": "libs/shared/assets",
     "shared-environments": "libs/shared/environments",
     "svg-icon": "libs/shared/svg-icon",
-    "tailwindlabs": "apps/tailwindlabs",
-    "tailwindlabs-e2e": "apps/tailwindlabs-e2e",
     "tailwindui": "apps/tailwindui",
     "tailwindui-e2e": "apps/tailwindui-e2e"
   }
