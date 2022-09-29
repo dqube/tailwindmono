@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'devarch-vertical',
-  template: ` <p>vertical works!</p> `,
+  selector: 'app-detail',
+  template: ` <p>detail works!</p> `,
   styles: [],
 })
-export class VerticalComponent implements OnInit {
+export class DetailComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

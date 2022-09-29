@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerticalComponent } from './vertical.component';
+import { DashboardComponent } from './dashboard.component';
 
-describe('VerticalComponent', () => {
-  let component: VerticalComponent;
-  let fixture: ComponentFixture<VerticalComponent>;
+describe('DashboardComponent', () => {
+  let component: DashboardComponent;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [VerticalComponent],
+      declarations: [DashboardComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(VerticalComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

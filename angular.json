@@ -4,6 +4,9 @@
   "projects": {
     "artemis": "apps/artemis",
     "artemis-e2e": "apps/artemis-e2e",
+    "booking-feature-detail": "libs/booking/feature/detail",
+    "booking-feature-list": "libs/booking/feature/list",
+    "booking-feature-shell": "libs/booking/feature/shell",
     "components-layout": "libs/components/layout",
     "components-navigations": "libs/components/navigations",
     "shared-assets": "libs/shared/assets",
