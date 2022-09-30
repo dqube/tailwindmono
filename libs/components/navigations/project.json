@@ -2,7 +2,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/components/navigations/src",
-  "prefix": "devarch",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
