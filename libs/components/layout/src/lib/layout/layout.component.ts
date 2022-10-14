@@ -17,7 +17,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
     private _router: Router
   ) {}
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
+    console.log('Method not implemented.');
   }
 
   ngOnInit(): void {

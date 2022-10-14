@@ -13,6 +13,12 @@ import { RouterModule } from '@angular/router';
           (await import('@app/booking/list')).ListModule,
       },
       {
+        path: 'list',
+        pathMatch: 'full',
+        loadChildren: async () =>
+          (await import('@app/booking/list')).ListModule,
+      },
+      {
         path: 'detail',
         pathMatch: 'full',
         loadChildren: async () =>

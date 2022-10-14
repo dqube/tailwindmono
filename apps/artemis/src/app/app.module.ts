@@ -27,7 +27,7 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     data: {
-      layout: 'empty',
+      layout: 'classic',
     },
     children: [
       {
@@ -37,6 +37,20 @@ const routes: Routes = [
       },
     ],
   },
+  // {
+  //   path: '',
+  //   component: LayoutComponent,
+  //   data: {
+  //     layout: 'empty',
+  //   },
+  //   children: [
+  //     {
+  //       path: 'routename',
+  //       loadChildren: () =>
+  //         import('@app/booking/shell').then((m) => m.ShellModule),
+  //     },
+  //   ],
+  // },
 ];
 // const routerConfig: ExtraOptions = {
 //   // preloadingStrategy       : PreloadAllModules,
